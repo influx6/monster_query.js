@@ -1,0 +1,10 @@
+var builder = require("jsConcat").JsConcat;
+
+var mq_build={
+	build_dir:"./builds",
+	src_dir:"./lib",
+	name:"mq.js",
+	src:["mq.js","mq_elements.js","mq_query.js","mq_events.js","mq_namespace.js"]
+};
+
+build.compile(mq_build);
