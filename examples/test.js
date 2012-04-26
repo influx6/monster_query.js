@@ -29,3 +29,5 @@ mq.get('section').getAttr('*','class','text-writer',function(o){ console.log(o)}
 mq.get('section').getAttr('*','class','text-writer');
 
 mq.get('section').getAttr('*','id','js-writer',function(o){ console.log(o)});
+
+mq.getSelector('div ul li');
