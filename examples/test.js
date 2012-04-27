@@ -31,3 +31,13 @@ mq.get('section').getAttr('*','class','text-writer');
 mq.get('section').getAttr('*','id','js-writer',function(o){ console.log(o)});
 
 mq.getSelector('div ul li');
+
+//also you can to use MonsterQuery's ready method,simply
+
+MQ.onReady(function(){
+
+	var html_editor = MQ.Query.getSelector("#editor_view div ul").get("li");
+	
+	console.log(html_editor.grab());
+});
+
