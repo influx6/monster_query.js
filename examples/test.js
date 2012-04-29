@@ -40,9 +40,7 @@ MQ.onReady(function(){
 	
 	console.log(html_editor.grab());
 	
-	this.Query.getSelector("div ul li", function(o){ 
-		o.style.background="red"; 
-		}).css({color:"red", background: "#fff"});
+	this.Query.getSelector("div ul li").css({color:"red", background: "#fff"}).addClass("sucker").grab().removeClass("sucker");
 	
 });
 
