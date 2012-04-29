@@ -36,8 +36,13 @@ mq.getSelector('div ul li');
 
 MQ.onReady(function(){
 
-	var html_editor = MQ.Query.getSelector("#editor_view div ul").get("li");
+	var html_editor = this.Query.getSelector("#editor_view div ul").get("li");
 	
 	console.log(html_editor.grab());
+	
+	this.Query.getSelector("div ul li", function(o){ 
+		o.style.background="red"; 
+		}).css({color:"red", background: "#fff"});
+	
 });
 
