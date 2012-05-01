@@ -32,7 +32,8 @@ mq.get('section').getAttr('*','id','js-writer',function(o){ console.log(o)});
 
 mq.getSelector('div ul li');
 
-//also you can to use MonsterQuery's ready method,simply
+//also you can also use MonsterQuery's onReady method to ensure the DOM is fully loaded
+//simply,
 
 MQ.onReady(function(){
 
@@ -40,7 +41,12 @@ MQ.onReady(function(){
 	
 	console.log(html_editor.grab());
 	
-	this.Query.getSelector("div ul li").css({color:"red", background: "#fff"}).addClass("sucker").grab().removeClass("sucker");
+	this.Query.getSelector("div ul li").css({color:"red", background: "#ff5757"})
+	.addClass("sucker").removeClass("sucker");
+	
+	this.Query.getSelector("div ul li").css({'background':'#fff'},v.odd());
+	
+	console.log(html_editor.grab());
 	
 });
 
