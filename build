@@ -5,7 +5,7 @@ var mq_build={
 	build_dir:"./builds",
 	src_dir:"./lib",
 	name:"mq.js",
-	src:["mq.js","mq_elements.js","mq_query.js","mq_events.js","mq_ready.js"]
+	src:["mq.js","mq_store.js","mq_elements.js","mq_query.js","mq_events.js","mq_ready.js"]
 };
 
 builder.compile(mq_build);
